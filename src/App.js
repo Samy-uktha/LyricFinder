@@ -18,7 +18,9 @@ class App extends Component {
 
   fetchLyrics = async () => {
     const { artist, song } = this.state;
-    const response = await fetch('http://127.0.0.1:8000/api/lyrics', {
+    // const response = await fetch('http://127.0.0.1:8000/api/lyrics', {
+    const response = await fetch('https://7fb6-106-222-206-122.ngrok-free.app/api/lyrics', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ artist, song }),

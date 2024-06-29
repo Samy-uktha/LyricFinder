@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.lyrics-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .left-column, .right-column {
+    width: 65%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .left-column {
+    border-right: 1px solid #4f57ff;
+    padding-right: 20px;
   }
-}
+  
+  .right-column {
+    padding-left: 20px;
+  }
+  
+  .lyric-input {
+    margin-bottom: 20px;
+  }
+  
+  .lyric-input input {
+    margin-right: 10px;
+  }
+  
+  .lyric-input button {
+    padding: 5px 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  iframe {
+    width: 100%;
+    height: 315px;
+    margin-top: 20px;
+  }
+  
+  /* Add styling for lyrics */
+  .left-column pre {
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif, monospace; /* Change font here */
+    font-size: 16px; /* Change font size here */
+    color: #000000; /* Change font color here */
+    line-height: 2;
+    white-space: pre-wrap; /* This allows the text to wrap properly */
+  }
+ 
